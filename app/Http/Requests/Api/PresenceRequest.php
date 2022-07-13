@@ -28,7 +28,7 @@ class PresenceRequest extends FormRequest
             'family_name'=> 'required|max:250',
             'adults'=> 'required|max:250',
             'children'=> 'required|max:250',
-            'phone'=> "required|max:250|unique:presences,phone,{$this->event_id},event_id",
+            'phone'=> "required",
         ];
     }
 }
